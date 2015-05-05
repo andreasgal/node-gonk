@@ -32,6 +32,7 @@ function build_node() {
     git clone $NODE_REPO $1
     cd $1
     ./configure \
+	--prefix=/ \
 	--without-npm \
 	--without-snapshot \
 	--dest-cpu=arm \
